@@ -1,0 +1,152 @@
+.cont_assista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+}
+
+.assista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+}
+
+.assista_text {
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+}
+
+.assista_text h1{
+    font-size: 3.1rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.assista_text h2{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.cont_video img {
+    width: 540px;
+}
+
+.cont_video {
+    position: relative;
+}
+
+.video_assista {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    z-index: -1;
+}
+
+.video_assista video {
+    width: 355px;
+}
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    
+    
+    .video_assista video{
+        width: 280px;
+    }
+
+    .assista_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_assista {
+        height: 100%;
+    }
+
+    .assista {
+        flex-direction: column;
+    }
+
+   
+
+    .assista_text h1{
+        font-size: 2.5rem;
+    }
+
+    .assista_text h2 {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+   
+
+    .assista_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_assista {
+        height: 100%;
+    }
+
+    .assista {
+        flex-direction: column;
+    }
+
+    .assista_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .assista_text h22 {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+   
+
+    .assista_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .cont_assista {
+       height: 100%;
+    }
+
+    .assista {
+        flex-direction: column;
+       
+    }
+
+
+
+    .assista_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .assista_text h2 {
+        font-size: 1.25rem;
+    }
+
+
+        
+}

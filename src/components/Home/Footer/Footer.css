@@ -1,0 +1,115 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 870px;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.footer_items p, .footer p a {
+    color: #757575;
+    font-size: 1rem;
+    text-decoration: none;
+    
+}
+
+.footer p a:hover{
+    text-decoration: underline;
+}
+
+
+.cont_itemFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 870px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+.lista ul li {
+    list-style: none;
+    padding: 7px 0;
+}
+
+.lista ul li a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lista ul li a:hover{
+    text-decoration: underline;
+}
+
+.cont_itemFooter select {
+    margin-top: 10px;
+    background-color: #000;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    border: 1px solid #333;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.cont_itemFooter select::before{
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.lista span {
+    margin: 20px 0 30px 0;
+    font-size: 14px;
+    color: #757575;
+}
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    .footer_items, .cont_itemFooter {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .footer_items, .cont_itemFooter {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+   
+
+    .footer_items, .cont_itemFooter {
+        width: 740px;
+    }
+
+   
+}

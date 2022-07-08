@@ -1,0 +1,164 @@
+.cont_ask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    border-bottom: 8px solid #222;
+}
+
+.cont_ask h1 {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.cont_ask ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+.ask_items {
+    width: 850px;
+}
+
+.ask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 2.2rem;
+    font-weight: 400;
+    width: 100%;
+    height: 70px;
+    border: 0;
+    background: #303030;
+    color: #fff;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.faPlus {
+    font-size: 2.2rem;
+}
+
+.cont_ask h3 {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.answer {
+    display: none;
+    margin-top: 1px;
+    background: #303030;
+    padding: 30px;
+    padding-left: 2.2rem; 
+    font-size: 1.6rem;
+    color: #f9f9f9f9; 
+    position: relative;
+}
+
+
+.cont_ask form {
+    margin-bottom: 20px;
+}
+
+.answer.active {
+    display: flex;
+    
+}
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 450px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 400px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 450px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 576px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 500px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 540px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 768px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 700px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 740px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 700px;
+    }
+     
+}

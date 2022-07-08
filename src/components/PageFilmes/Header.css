@@ -1,0 +1,117 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding: 0px 30px;
+    background: linear-gradient(to bottom, rgb(27, 27, 27) 0%, transparent 100%);
+    transition: all ease .5s;
+}
+
+header.black {
+    background-color: #141414;
+}
+
+.header_logo{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+}
+
+.header_logo ul li{
+    display: inline-block;
+    padding-right: 20px;
+    color: #e5e5e5;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.header_logo ul li:hover{
+    color: rgb(182, 182, 182);
+}
+
+.header_logo ul li.active{
+    color: #fff;
+    font-weight: 600;
+}
+
+.header_logo img{
+    height: 100%;
+}
+
+.header_user{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_user img {
+    height: 35px;
+    border-radius: 3px;
+}
+
+.header_user {
+    display: flex;
+    flex-direction: row;
+}
+
+.FaSearch, .FaBell {
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 575.98px){
+
+    .FaSearch, .FaBell {
+        display: none;
+        
+    }
+
+    .header_logo ul li {
+        display: none;
+    }
+
+    .header_user img {
+        height: 30px;
+    }
+
+   
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+
+    .FaSearch, .FaBell {
+        font-size: 15px;
+    }
+
+    .header_logo ul li {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    .header_user img {
+        height: 30px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .FaSearch, .FaBell {
+        font-size: 20px;
+    }
+
+    .header_logo ul li {
+        font-size: 12px;
+    }
+}

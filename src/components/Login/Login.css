@@ -1,0 +1,342 @@
+.container_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/cb7c1f4e-1052-40ae-b74a-5f125133aebd/BR-pt-20220509-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background: rgba(0, 0, 0, .4);
+    background-size: cover;
+    padding-top: 90px;
+}
+
+.background_login .logo {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   padding-left: 30px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.container_form{
+    display: flex;
+    flex-direction: column;
+    height: 675px;
+    margin-bottom: 90px;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 5px;
+}
+
+.container_form h1 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 60px 60px 28px 60px;
+    letter-spacing: 1px;
+}
+
+.container_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_form form input {
+    background: #333;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    border: none;
+    outline: none;
+    width: 315px;
+    margin: 15px 60px 0px 60px;
+    padding-left: 15px;
+    border-radius: 4px;
+}
+
+.container_form form input::placeholder{
+    font-size: 16px;
+}
+
+.container_form form a{
+    background-color: #e50914;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 40px 60px 10px 60px;
+}
+
+.suporte_login {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.suporte_items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 315px;
+}
+
+.suporte_items span {
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.suporte_items a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.suporte_items a:hover {
+    text-decoration: underline;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    background-color: #b3b3b3;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.faCheck {
+    opacity: 0;
+    color: #000;
+    font-size: 13px;
+    transition: all ease .1s;
+}
+
+.faCheck.active{
+    opacity: 1;
+}
+
+.login_msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.msg_items {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+}
+
+.msg_items .novo  {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.msg_items .novo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.msg_items .novo a:hover{
+    text-decoration: underline;
+}
+
+.msg_items span {
+    font-size: 13.5px;
+    color: #8c8c8c;
+    margin-bottom: 10px;
+}
+
+.msg_items span a{
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.msg_items span a:hover{
+    text-decoration: underline;
+}
+
+.expandTermos {
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.expandTermos.active{
+    opacity: 1;
+}
+
+.saibaMais {
+    transition: all ease .3s;
+}
+
+.saibaMais.closed{
+    opacity: 0;
+}
+
+.footer_login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0,0,0,.8);
+}
+
+.footer_loginItems {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.footer_loginItems p {
+    color: #757575;
+}
+
+.footer_loginItems a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer_loginItems a:hover {
+    text-decoration: underline;
+}
+
+.listas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 900px;
+}
+
+.listas ul {
+    padding: 0;
+    margin: 0;
+}
+
+.listas li {
+    list-style: none;
+    padding: 8px 0;
+    font-size: 14px;
+   
+}
+
+.listas select {
+    margin-top: 10px;
+    background-color: #000;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    border: 1px solid #333;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.listas select::before{
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 767.98px) {
+    .container_login {
+        background: #000;
+    }
+
+    .background_login .logo {
+        padding-left: 5px;
+     }
+     
+     .logo img {
+         height: 100px;
+     }
+
+     .container_form {
+         width: 100%;
+         height: 550px;
+     }
+
+     .container_form form input  {
+         width: 90%;
+         margin: 15px 30px 0px 30px;
+     }
+
+     .container_form form a{
+         width: 90%;
+         margin: 40px 30px 10px 30px;
+     }
+
+     .suporte_items {
+         width: 90%;
+     }
+
+     .container_form h1 {
+        margin: 60px 30px 28px 30px;
+     }
+
+     .msg_items {
+         width: 90%;
+     }
+
+     .footer_login {
+         border-top: 1px solid  #757575;;
+     }
+
+     .footer_loginItems {
+        width: 90%;
+    }
+
+    .listas {
+        width: 90%;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    .footer_loginItems {
+        width: 768px;
+        padding-left: 30px;
+    }
+
+    .listas {
+        width: 700px;
+
+    }
+}

@@ -1,0 +1,266 @@
+body {
+    background-color: #000;
+}
+
+.home_topo {
+    display: flex;
+    width: 100%;
+    height: 78vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/cb7c1f4e-1052-40ae-b74a-5f125133aebd/BR-pt-20220509-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_topo {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #000 0%, transparent 50%),
+    linear-gradient(to bottom, #000 0%, transparent 50%);
+    border-bottom: 8px solid #222;
+}
+
+.navbar_home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+}
+
+.navbar_home .logo{
+   height: 100px;
+}
+
+.navbar_home .logo img {
+    height: 100%;
+}
+
+.btn_entrar {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    background-color: #e50914;
+    padding: 7px 12px;
+    border-radius: 3px;
+    height: 100%;
+}
+
+.content_topo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+    height: 78vh;
+}
+
+.content_topo h1 {
+    width: 800px;
+    font-size: 4rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.content_topo h2 {
+    font-size: 1.6rem;
+    font-weight: 450;
+    margin: 5px;
+}
+
+.form_topo h3 {
+    font-size: 1.2;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input_form {
+    display: flex;
+}
+
+
+.form_topo input {
+    width: 500px;
+    height: 70px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+}
+
+.labelEmail {
+    position: absolute;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+    transition: all ease .2s;
+}
+
+.labelEmail.labelTop {
+    transition: all ease .2s;
+    align-items: flex-start;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+
+.form_topo button {
+    font-size: 1.9rem;
+    height: 70px;
+    width: 200px;
+    background: #e50914;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.form_topo button:hover {
+    background: #fa131f;
+}
+
+.AiOutlineRight {
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+select {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    border: 1px solid grey;
+    height: 35px;
+    padding-left: 10px;
+    width: 120px;
+    margin-right: 35px;
+    border-radius: 2px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;   
+    align-items: center; 
+}
+
+.btn_entrarLink {
+    text-decoration: none;
+}
+
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 450px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 450px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+    
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 576px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 576px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+   
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 700px !important;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 700px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    
+}
